@@ -1,13 +1,13 @@
+import React from 'react'
 import "./Imagen.css";
 
 const Imagen = ({ img, type = "normal", alt }) => {
   return (
     <div>
-      {
-        (type = "logo" ? (
+      { type = "logo" ? (
           <div className="text-logo">
             <img
-              src={img}
+              src={ img }
               alt={alt}
               className={type === "logo" ? "logo" : "normal"}
             />
@@ -15,10 +15,10 @@ const Imagen = ({ img, type = "normal", alt }) => {
           </div>
         ) : (
           <img src={img} alt={alt} className="normal" />
-        ))
+        )
       }
     </div>
   );
-};
+}
 
 export default Imagen;

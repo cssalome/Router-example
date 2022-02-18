@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/ui/Header'
 
 function App() {
-  return (<Header/>)
+  return (<Header />)
 }
 
 export default App;
